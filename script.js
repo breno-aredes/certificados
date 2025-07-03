@@ -7,6 +7,14 @@ const certificatesData = [
       "Aprendizagem prática sobre integração do GitHub Copilot, técnicas de refatoração, produtividade com IA e desenvolvimento de projetos, além de mentorias ao vivo e networking com profissionais da área.",
     image: "public/certificates/Breno-Matias-Aredes-Rocha-PWVYRCKI.png",
   },
+  {
+    id: 2,
+    title: "Certificado de interfaces estáticas",
+    date: "Novembro de 2022",
+    description:
+      "Certificado abrangendo front-end com interfaces estáticas utilizando HTML, CSS e JavaScript, além de fundamentos da computação, incluindo algoritmos e lógica de programação.",
+    image: "public/certificates/Breno-Matias-Aredes-Rocha-01.png",
+  },
 ];
 
 const certificatesGrid = document.getElementById("certificatesGrid");
