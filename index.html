@@ -1,37 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <title>Certificados de Breno Matias Arêdes Rocha</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 2rem;
-    }
-    h1 {
-      font-size: 24px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 10px 0;
-    }
-    img {
-      max-width: 500px;
-      display: block;
-      margin-top: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breno Matias Aredes Rocha - Portfolio de Certificados</title>
+    <meta name="description" content="Portfolio de certificados profissionais de Breno Matias Aredes Rocha">
+    <meta name="keywords" content="certificados, portfolio, Breno Matias Aredes Rocha, desenvolvimento profissional">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Certificados de Breno Arêdes</h1>
-  <ul>
-    <li>
-      <strong>Breno-Matias-Aredes-Rocha-PWVYRCKI.png</strong><br />
-      <a href="Breno-Matias-Aredes-Rocha-PWVYRCKI.png" target="_blank">Ver certificado</a>
-    </li>
-  </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Breno Matias Aredes Rocha</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#certificates" class="nav-link">Certificados</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Breno Matias Aredes Rocha</h1>
+                <p class="hero-subtitle">Portfolio de Certificados Profissionais</p>
+                <p class="hero-description">
+                    Explore minha jornada de desenvolvimento profissional através dos certificados 
+                    e qualificações que adquiri ao longo da minha carreira.
+                </p>
+                <a href="#certificates" class="cta-button">
+                    Ver Certificados
+                    <i class="fas fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meus Certificados</h2>
+                <p class="section-description">
+                    Uma coleção dos meus certificados profissionais e conquistas acadêmicas
+                </p>
+            </div>
+            
+            <div class="certificates-grid" id="certificatesGrid">
+                <!-- Certificate cards will be dynamically loaded here -->
+                <div class="certificate-placeholder">
+                    <div class="placeholder-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Carregando Certificados...</h3>
+                    <p>Aguarde enquanto carregamos os certificados disponíveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="contact-description">
+                    Interessado em saber mais sobre minha experiência profissional? 
+                    Entre em contato comigo através dos meios abaixo.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:breno@example.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://linkedin.com/in/breno-matias-aredes-rocha" class="contact-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/breno-aredes" class="contact-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Breno Matias Aredes Rocha. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Certificado">
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDate"></p>
+                    <p id="modalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
